@@ -2,10 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Furni Mart</title>
     <!-- START:: Styles -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- END:: Styles -->
 </head>
 <body>
@@ -16,7 +26,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="assets/images/logo.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -70,19 +80,14 @@
                             </ul>
                         </div>
                         <div class="hearer_icon d-flex">
-                            <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
-                            <a href=""><i class="ti-heart"></i></a>
+                            <a id="search_1" href="javascript:void(0)"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href=""><i class="fa-regular fa-heart"></i></i></a>
                             <div class="dropdown cart">
                                 <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-cart-plus"></i>
                                 </a>
-                                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <div class="single_product">
-    
-                                    </div>
-                                </div> -->
-                                
+              
                             </div>
                         </div>
                     </nav>
@@ -94,18 +99,39 @@
                 <form class="d-flex justify-content-between search-inner">
                     <input type="text" class="form-control" id="search_input" placeholder="Search Here">
                     <button type="submit" class="btn"></button>
-                    <span class="ti-close" id="close_search" title="Close Search"></span>
+                    <span id="close_search" title="Close Search"> <i class="fa-solid fa-xmark" ></i> </span>
                 </form>
             </div>
         </div>
     </header>
     <!-- END::Nav Section-->
     
-     <!-- jquery plugins here-->
-     <script src="assets/js/jquery-1.12.1.min.js"></script>
-     <!-- popper js -->
-     <script src="assets/js/popper.min.js"></script>
-     <!-- bootstrap js -->
-     <script src="assets/js/bootstrap.min.js"></script>
+    <!-- START:: JS -->
+    <script src="assets/js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="assets/js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="assets/js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- slick js -->
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.form.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/mail-script.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/custom.js"></script>
+    <!-- END:: JS -->
 </body>
 </html>
