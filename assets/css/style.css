@@ -7571,6 +7571,7 @@ h6 {
 
 .footer_part {
   padding: 130px 0px 25px;
+  background-color: var(--bgColor);
 }
 
 @media (max-width: 576px) {
@@ -7625,6 +7626,7 @@ h6 {
   font-size: 20px;
   margin-bottom: 30px;
   font-weight: 500;
+  color: var(--textColor);
 }
 
 @media (max-width: 576px) {
@@ -7658,18 +7660,19 @@ h6 {
 
 .footer_part .single_footer_part p {
   margin-bottom: 10px;
+  color: var(--textColor);
 }
 
 
 .footer_part .single_footer_part .list-unstyled li a {
-  color: #7f7f7f;
+  color: var(--textColor);
   margin-bottom: 10px;
   display: inline-block;
 }
 
 
 .footer_part .single_footer_part .list-unstyled li a:hover {
-  color: #ff3368 !important;
+  color: white !important;
 }
 
 
@@ -7702,10 +7705,10 @@ h6 {
   padding: 20px 15px;
   font-size: 13px;
   border-radius: 5px;
-  border: 0px solid transparent;
+  border: 2px solid var(--textColor);
   margin-top: 20px;
   width: 80%;
-  background-color: #f9f9fe;
+  background-color: var(--bgColor);
 }
 
 
@@ -7741,7 +7744,7 @@ h6 {
 
 .footer_part .footer_icon li a {
   font-size: 14px;
-  color: #7f7f7f;
+  color: var(--textColor);
   padding: 5px 11px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -7749,11 +7752,10 @@ h6 {
 
 
 .footer_part .footer_icon li a:hover {
-  background-color: #ff3368;
+  background-color: var(--textColor);
   box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
-  color: #fff !important;
+  color: white !important;
 }
-
 
 .footer_part .footer_icon li a i:hover {
   color: #fff !important;
@@ -7790,7 +7792,7 @@ h6 {
 
 
 .footer_part .copyright_text p {
-  color: #888;
+  color: var(--textColor);
 }
 
 
