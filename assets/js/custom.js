@@ -257,10 +257,10 @@
       seconds = "0" + seconds;
     }
 
-    $("#days").html("<span style='color:black;'>Days</span>" + days);
-    $("#hours").html("<span style='color:black;'>Hours</span>" + hours);
-    $("#minutes").html("<span style='color:black;'>Minutes</span>" + minutes);
-    $("#seconds").html("<span style='color:black;'>Seconds</span>" + seconds);
+    $("#days").html("<span style='color:white;'>Days</span>" + days);
+    $("#hours").html("<span style='color:white;'>Hours</span>" + hours);
+    $("#minutes").html("<span style='color:white;'>Minutes</span>" + minutes);
+    $("#seconds").html("<span style='color:white;'>Seconds</span>" + seconds);
 
   }
 // click counter js
