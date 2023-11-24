@@ -139,12 +139,14 @@ body {
 
 .message_submit_form:focus {
   outline: none;
+  color: white;
 }
 
 
 input:hover,
 input:focus {
   outline: none !important;
+  color: white;
 }
 
 
@@ -346,6 +348,7 @@ button:focus,
   box-shadow: none;
   -webkit-transition: 1s;
   transition: 1s;
+  color: white;
 }
 
 
@@ -551,6 +554,7 @@ ul {
   border-color: #dddddd;
   outline: 0;
   box-shadow: none;
+  color: white;
 }
 
 
@@ -664,6 +668,15 @@ ul {
   text-transform: uppercase;
 }
 
+@media (max-width: 425px){
+  .btn_2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+  }
+}
 
 .btn_2:hover {
   border: 2px solid var(--textColor) !important;
@@ -1447,6 +1460,7 @@ ul {
   border-color: #f0e9ff;
   outline: 0;
   box-shadow: none;
+  color: white;
 }
 
 
@@ -1485,6 +1499,7 @@ ul {
   border-color: #f0e9ff;
   outline: 0;
   box-shadow: none;
+  color: white;
 }
 
 
@@ -2100,6 +2115,7 @@ ul {
 .comment-form .form-control:focus {
   outline: 0;
   box-shadow: none;
+  color: white;
 }
 
 
@@ -2324,6 +2340,7 @@ ul {
 
 .main_menu .form-control:focus {
   box-shadow: none;
+  color: white;
 }
 
 
@@ -2432,7 +2449,6 @@ ul {
 
   .main_menu .main-menu-item .nav-item .nav-link {
     padding: 5px 15px !important;
-    color: #000;
   }
 
   .navbar-collapse {
@@ -2441,7 +2457,7 @@ ul {
     left: 0;
     top: 50px;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--bgColor);
     text-align: center !important;
   }
 
@@ -2503,7 +2519,7 @@ ul {
 
 .dropdown-menu {
   border: 0px solid rgba(0, 0, 0, 0.15) !important;
-  background-color: #fafafa;
+  background-color: var(--bgColor);
 }
 
 
@@ -2532,6 +2548,9 @@ ul {
 }
 
 
+.nav-link:focus, .nav-link:active{
+  color: white;
+}
 
 .banner_part {
   position: relative;
@@ -4769,12 +4788,13 @@ ul {
 }
 
 
-.checkout_area .form-control :focus {
+.checkout_area .form-control:focus {
   color: #495057;
   background-color: #fff;
   border: 1px solid #ced4da;
   outline: 0;
   box-shadow: none;
+  color: white;
 }
 
 
@@ -4923,6 +4943,7 @@ ul {
 
 .p_star input:focus+.placeholder {
   display: none;
+  color: white;
 }
 
 
@@ -5847,6 +5868,7 @@ h6 {
 
 .genric-btn:focus {
   outline: none;
+  color: white;
 }
 
 
@@ -6328,6 +6350,7 @@ h6 {
 
 .single-input:focus {
   outline: none;
+  color: white;
 }
 
 
@@ -6370,6 +6393,7 @@ h6 {
 
 .single-textarea:focus {
   outline: none;
+  color: white;
 }
 
 
@@ -6387,6 +6411,7 @@ h6 {
 .single-input-primary:focus {
   outline: none;
   border: 1px solid #ff3368;
+  color: white;
 }
 
 
@@ -6404,6 +6429,7 @@ h6 {
 .single-input-accent:focus {
   outline: none;
   border: 1px solid #eb6b55;
+  color: white;
 }
 
 
@@ -6420,7 +6446,7 @@ h6 {
 
 .single-input-secondary:focus {
   outline: none;
-  border: 1px solid #f09359;
+  color: white;
 }
 
 
@@ -7434,6 +7460,7 @@ h6 {
 .form-contact .form-control:focus {
   outline: 0;
   box-shadow: none;
+  color: white;
 }
 
 
