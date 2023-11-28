@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* START: My Styles */
 :root {
   --textColor: #78909c;
@@ -318,7 +323,7 @@ input:focus {
 
 
 .section_padding {
-  padding: 140px 0px;
+  padding: 120px 0px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -3803,12 +3808,12 @@ ul {
 
 
 .left_sidebar_area .widgets_inner ul li:hover {
-  color: #ff3368;
+  color: var(--bgColor);
 }
 
 
 .left_sidebar_area .widgets_inner ul li:hover a {
-  color: #ff3368;
+  color: var(--bgColor);
 }
 
 
@@ -4037,7 +4042,7 @@ ul {
 
 
 .product_top_bar .single_product_menu p span {
-  color: #ff3368;
+  color: var(--textColor);
 }
 
 
@@ -4113,7 +4118,6 @@ ul {
   text-align: center;
   max-width: 30px;
 }
-
 
 .price_value span {
   margin: 5px 5px 0;
@@ -8272,7 +8276,7 @@ font-size: 14px; /* Adjust font size for smaller screens */
 }
 }
 /* START: Margin Media Queries */
-.margin-top-responsive{margin-top: 5%;}
+.margin-top-responsive{margin-top: 5.5%;}
 @media (max-width: 1024px){.margin-top-responsive{margin-top: 7.5%;}}
 @media (max-width: 768px){.margin-top-responsive{margin-top: 9%;}}
 @media (max-width: 425px){.margin-top-responsive{margin-top: 14%;}}
