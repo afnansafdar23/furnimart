@@ -281,9 +281,43 @@ i {
     font-weight: 500;
     text-transform: uppercase;
   }
-
 }
 
+.faq-item h5 button, .card-header h2 button{
+  color: var(--textColor);
+}
+
+.card-header h2 button{
+  font-weight: 700;
+}
+
+.collapse p{
+  padding: 0 14px;
+}
+
+.btn-link {
+  color: var(--textColor) !important;
+}
+
+.btn-link:hover{
+  color: var(--bgColor) !important;
+}
+
+/* Checkout page */
+.returning-customer{
+  border-top: 5px solid var(--textColor);
+  background-color: #f7f6f7;
+}
+.returning-customer a{
+  text-decoration: none; 
+  color: var(--textColor); 
+  font-weight: 700;
+}
+.returning-customer a:hover{
+  text-decoration: none; 
+  color: var(--bgColor); 
+  font-weight: 700;
+}
 
 /* END: My Styles */
 /* .btn_2,
@@ -3190,12 +3224,19 @@ ul {
   }
 }
 
+@media (max-width: 768px){
+  .single_product_item{
+    width: 75%;
+    text-align: center;
+    margin-left: 10%;
+  }
+}
 
 @media (max-width: 425px){
   .single_product_item{
-    width: 90%;
+    width: 78%;
     text-align: center;
-    margin-left: 3%;
+    margin-left: 10%;
   }
 
   .single_product_item img{
@@ -3205,11 +3246,17 @@ ul {
 
 @media (max-width: 321px){
   .single_product_item{
-    width: 95%;
+    width: 88%;
+    text-align: center;
+    margin-left: 7%;
   }
 
   .single_product_item img{
     height: 200px;
+  }
+
+  .section_tittle h2{
+    font-size: 25px !important;
   }
 }
 
@@ -3908,8 +3955,8 @@ ul {
 
 .p_filter_widgets .list li.active a:before,
 .p_filter_widgets .list li:hover a:before {
-  background: #ff3368;
-  border-color: #ff3368;
+  background: var(--textColor);
+  border-color: var(--textColor);
 }
 
 
@@ -4141,10 +4188,10 @@ ul {
 .irs-bar {
   height: 6px;
   top: 33px;
-  border-top: 1px solid #ff3368;
-  border-bottom: 1px solid #ff3368;
-  background: #ff3368;
-  background: linear-gradient(to top, #ff3368 0%, #ff3368 100%);
+  border-top: 1px solid --textColor;
+  border-bottom: 1px solid --textColor;
+  background: var(--textColor);
+  /* background: linear-gradient(to top, #ff3368 0%, #ff3368 100%); */
 }
 
 
@@ -4162,9 +4209,9 @@ ul {
 .irs-slider {
   height: 15px;
   width: 15px;
-  border: 1px solid #ff3368;
-  background-color: #ff3368;
-  background: linear-gradient(to bottom, #ff3368 0%, #ff3368 20%, #ff3368 100%);
+  border: 1px solid var(--textColor);
+  background-color: var(--textColor);
+  /* background: linear-gradient(to bottom, #ff3368 0%, #ff3368 20%, #ff3368 100%); */
   top: 28px;
   box-shadow: none;
 }
@@ -6025,7 +6072,7 @@ sup,
 sub,
 u,
 del {
-  color: #ff3368;
+  color: var(--textColor);
 }
 
 

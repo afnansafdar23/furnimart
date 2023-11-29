@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="assets/css/slick.css" />
     <!-- style CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Price range -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
     <!-- END:: Styles -->
   </head>
   <body>
@@ -275,27 +277,16 @@
                             </div>
                         </aside>
 
-                        <aside class="left_widgets p_filter_widgets price_rangs_aside">
-                            <div class="l_w_title">
+                        <!-- PRICE RANGE -->
+                        <aside class="mb-5">
+                            <div>
                                 <h3>Price Filter</h3>
                             </div>
-                            <div class="widgets_inner">
-                                <div class="range_item">
-                                    <!-- <div id="slider-range"></div> -->
-                                    <input type="text" class="js-range-slider" value="" />
-                                    <div class="d-flex">
-                                        <div class="price_text">
-                                            <p>Price :</p>
-                                        </div>
-                                        <div class="price_value d-flex justify-content-center">
-                                            <input type="text" class="js-input-from" id="amount" readonly />
-                                            <span>to</span>
-                                            <input type="text" class="js-input-to" id="amount" readonly />
-                                        </div>
-                                    </div>
-                                </div>
+                            <div>
+                                <input type="text" class="js-range-slider" name="my_range" value="" />
                             </div>
                         </aside>
+                        <!-- PRICE RANGE -->
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -316,8 +307,7 @@
         
                                 <div class="single_product_menu d-flex">
                                     <div class="input-group">
-                                        <input style="color: black;" type="text" class="form-control" placeholder="search"
-                                            aria-describedby="inputGroupPrepend">
+                                        <input style="color: black;" type="text" class="form-control" placeholder="search" aria-describedby="inputGroupPrepend">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-magnifying-glass"></i></span>
                                         </div>
@@ -370,7 +360,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="single_product_item">
-                                <img src="assets/images/product/product_5.png" alt="">
+                                <img src="assets/images/product/product_2.png" alt="">
                                 <div class="single_product_text">
                                     <h4>Quartz Belt Watch</h4>
                                     <h3>$150.00</h3>

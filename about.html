@@ -24,6 +24,41 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- END:: Styles -->
+    <style>
+      .banner {
+        background-image: url('breadcrumb1.png.png');
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      .second-banner {
+        margin-left: 0;
+      }
+  
+      .second-banner img {
+        max-width: 100%;
+        height: auto;
+      }
+  
+      .logo {
+        max-width: 300px;
+        max-height: 200px;
+        margin: 20px auto;
+      }
+  
+      .image-hover:hover {
+        opacity: 0.8;
+        transform: scale(0.95);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+    </style>
   </head>
   <body>
     <!--START::Nav Section-->
@@ -175,210 +210,99 @@
     <!-- START: Contact Section -->
     <section class="margin-top-responsive">
       <div class="contact-section-header col-lg-12 col-sm-12 mb-4">
-        <h2 class="display-4">FAQ</h2>
-        <p class="lead" style="color: #fff; text-shadow: 2px 2px black;">Find answers to common questions about our furniture products.</p>
+        <h2 class="display-4">About Us</h2>
+        <p class="lead" style="color: #fff; text-shadow: 2px 2px black;">Home > About</p>
       </div>
     </section>
     <!-- START: Contact Section -->
 
-    <!-- START: FAQ Section -->
-    <div class="container mb-5">
-      <div class="row">
-  
-        <!-- Section 1 - Living Room Furniture -->
-        <div class="col-md-6"> <!-- Adjusted width to col-md-6 -->
-          <div class="card">
-            <div class="card-header" id="livingRoomHeader">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#livingRoomCollapse" aria-expanded="true" aria-controls="livingRoomCollapse">
-                  Your Order
-                </button>
-              </h2>
-            </div>
-            <div id="livingRoomCollapse" class="collapse show" aria-labelledby="livingRoomHeader" data-parent="#faqAccordion">
-              <div class="card-body">
-                <!-- FAQ Item 1 - Where is my order? -->
-                <div class="faq-item d-flex justify-content-between align-items-center">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faq1Collapse" aria-expanded="true" aria-controls="faq1Collapse">
-                      Where is my order?
-                    </button>
-                  </h5>
-                  <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faq1Collapse" aria-expanded="true" aria-controls="faq1Collapse">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-                <div id="faq1Collapse" class="collapse" aria-labelledby="faq1Header" data-parent="#livingRoomCollapse">
-                  <p>Once your order has been shipped, you will receive an email with a tracking number. You can use this tracking number to monitor the status of your delivery.</p>
-                </div>
-  
-                <!-- FAQ Item 2 - How can I make a complaint? -->
-                <div class="faq-item d-flex justify-content-between align-items-center">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faq2Collapse" aria-expanded="true" aria-controls="faq2Collapse">
-                      How can I make a complaint?
-                    </button>
-                  </h5>
-                  <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faq2Collapse" aria-expanded="true" aria-controls="faq2Collapse">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-                <div id="faq2Collapse" class="collapse" aria-labelledby="faq2Header" data-parent="#livingRoomCollapse">
-                  <p>If you have any issues or complaints about your order, please contact our customer service team through our <a href="contact.html">contact page</a>. We will be happy to assist you.</p>
-                </div>
-  
-                <!-- Add more FAQ items as needed -->
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Section 2 - Delivery -->
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header" id="deliveryHeader">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#deliveryCollapse" aria-expanded="true" aria-controls="deliveryCollapse">
-                  Delivery
-                </button>
-              </h2>
-            </div>
-            <div id="deliveryCollapse" class="collapse show" aria-labelledby="deliveryHeader" data-parent="#faqAccordion">
-              <div class="card-body">
-                <!-- FAQ Item 1 - Delivery Options -->
-                <div class="faq-item d-flex justify-content-between align-items-center">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqDelivery1Collapse" aria-expanded="true" aria-controls="faqDelivery1Collapse">
-                      Delivery Options
-                    </button>
-                  </h5>
-                  <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqDelivery1Collapse" aria-expanded="true" aria-controls="faqDelivery1Collapse">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-                <div id="faqDelivery1Collapse" class="collapse" aria-labelledby="faqDelivery1Header" data-parent="#deliveryCollapse">
-                  <p>We offer various delivery options, including standard and express delivery. Choose the one that suits you best.</p>
-                </div>
-  
-                <!-- FAQ Item 2 - Tracking Orders -->
-                <div class="faq-item d-flex justify-content-between align-items-center">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqDelivery2Collapse" aria-expanded="true" aria-controls="faqDelivery2Collapse">
-                      Tracking Orders
-                    </button>
-                  </h5>
-                  <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqDelivery2Collapse" aria-expanded="true" aria-controls="faqDelivery2Collapse">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-                <div id="faqDelivery2Collapse" class="collapse" aria-labelledby="faqDelivery2Header" data-parent="#deliveryCollapse">
-                  <p>Once your order is shipped, you will receive a tracking number to monitor the delivery status. You can use this tracking number on our website to track your order.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
+    <!-- START:: About Section -->
+    <section class="about-section mb-5">
+      <!-- Logo -->
+      <div class="container text-center mt-4">
+        <img src="assets/images/logo2.png" alt="Logo" class="logo">
+        <h3>The Future of WoodWorth</h3>
+        <h5>GETTING BETTER AND BETTER - TOGETHER</h5>
       </div>
-  
-      <!-- New Row for Payment and Refunds & Returns -->
-      <div class="row mt-4">
-  
-        <!-- Section 3 - Payment -->
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header" id="paymentHeader">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#paymentCollapse" aria-expanded="true" aria-controls="paymentCollapse">
-                  Payment
-                </button>
-              </h2>
-            </div>
-            <div id="paymentCollapse" class="collapse show" aria-labelledby="paymentHeader" data-parent="#faqAccordion">
-              <div class="card-body">
-                <!-- FAQ Item 1 - Payment Methods -->
-                <div class="faq-item d-flex justify-content-between align-items-center">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqPayment1Collapse" aria-expanded="true" aria-controls="faqPayment1Collapse">
-                      Payment Methods
-                    </button>
-                  </h5>
-                  <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqPayment1Collapse" aria-expanded="true" aria-controls="faqPayment1Collapse">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-                <div id="faqPayment1Collapse" class="collapse" aria-labelledby="faqPayment1Header" data-parent="#paymentCollapse">
-                  <p>We accept various payment methods, including credit cards, PayPal, and other online payment services.</p>
-                </div>
-  
-                <!-- FAQ Item 2 - Payment Security -->
-                <div class="faq-item d-flex justify-content-between align-items-center">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqPayment2Collapse" aria-expanded="true" aria-controls="faqPayment2Collapse">
-                      Payment Security
-                    </button>
-                  </h5>
-                  <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqPayment2Collapse" aria-expanded="true" aria-controls="faqPayment2Collapse">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-                <div id="faqPayment2Collapse" class="collapse" aria-labelledby="faqPayment2Header" data-parent="#paymentCollapse">
-                  <p>Your payment information is secure. We use encryption technology to protect your personal and financial information.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+
+      <!-- Second Banner Section -->
+      <div class="second-banner mt-5 mb-5">
+        <div class="container-fluid">
+          <!-- Add the "image-hover" class to the images you want to have the hover effect -->
+          <img src="assets/images/about1-1.jpg.webp" class="image-hover">
         </div>
-  
-        <!-- Section 4 - Refunds & Returns -->
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header" id="returnsHeader">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#returnsCollapse" aria-expanded="true" aria-controls="returnsCollapse">
-                  Refunds & Returns
-                </button>
-              </h2>
-            </div>
-            <div id="returnsCollapse" class="collapse show" aria-labelledby="returnsHeader" data-parent="#faqAccordion">
-              <div class="card-body">
-                <!-- FAQ Item 1 - Return Policy -->
-                <div class="faq-item d-flex justify-content-between align-items-center">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqReturns1Collapse" aria-expanded="true" aria-controls="faqReturns1Collapse">
-                      Return Policy
-                    </button>
-                  </h5>
-                  <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqReturns1Collapse" aria-expanded="true" aria-controls="faqReturns1Collapse">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-                <div id="faqReturns1Collapse" class="collapse" aria-labelledby="faqReturns1Header" data-parent="#returnsCollapse">
-                  <p>Our return policy allows you to return items within 30 days of purchase. Please review our <a href="return-policy.html">return policy</a> for more details.</p>
-                </div>
-  
-                <!-- FAQ Item 2 - Refund Process -->
-                <div class="faq-item d-flex justify-content-between align-items-center">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqReturns2Collapse" aria-expanded="true" aria-controls="faqReturns2Collapse">
-                      Refund Process
-                    </button>
-                  </h5>
-                  <button class="btn btn-link plus-minus-btn" type="button" data-toggle="collapse" data-target="#faqReturns2Collapse" aria-expanded="true" aria-controls="faqReturns2Collapse">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </div>
-                <div id="faqReturns2Collapse" class="collapse" aria-labelledby="faqReturns2Header" data-parent="#returnsCollapse">
-                  <p>Our refund process is designed to ensure a smooth and timely return of funds in case of a return. Refunds are typically processed within 5 business days.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
       </div>
-    </div>
-    <!-- END: FAQ Section -->
+
+      <!-- New Section with Picture on the Left and Content on the Right -->
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- "image-hover" class to the images you want to have the hover effect -->
+            <img src="assets/images/about1-2-1.jpg.webp" alt="Picture" class="img-fluid image-hover">
+          </div>
+          <div class="col-md-6">
+            <h6 style="color: #29384B;">WE DESIGN FURNITURE</h6>
+            <h3>Simple Creative</h3>
+            <hr style="color: black; width: 5em; margin-left: 2px; font-weight: bold;">
+            <p>Ut leo. Vivamus aliquet elit ac nisl. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac enim.
+              Sed cursus turpis vitae tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+              cubilia Curae; Fusce id purus.In consectetuer turpis ut velit. Suspendisse feugiat. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem. Fusce neque. Nam commodo suscipit quam.
+
+              Suspendisse feugiat. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Fusce neque. Nam
+              commodo suscipit quam.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Content Section -->
+      <div class="container mt-7 mb-7">
+        <div class="row">
+          <div class="col-md-6">
+            <h6 style="color: #29384B;">WE DESIGN FURNITURE</h6>
+            <h3>Design Quality</h3>
+            <hr style="color: black; width: 5em; margin-left: 2px; font-weight: bold;">
+            <p>Ut leo. Vivamus aliquet elit ac nisl. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac enim.
+              Sed cursus turpis vitae tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+              cubilia Curae; Fusce id purus.In consectetuer turpis ut velit. Suspendisse feugiat. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem. Fusce neque. Nam commodo suscipit quam.
+    
+              Suspendisse feugiat. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Fusce neque. Nam
+              commodo suscipit quam.</p>
+          </div>
+          <div class="col-md-6">
+            <!-- Add the "image-hover" class to the images you want to have the hover effect -->
+            <img src="assets/images/about1-3.jpg.webp" alt="Picture" class="img-fluid image-hover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Content Section (Map Section) -->
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 style="color: #29384B;">Our Location</h2>
+            <h4>Visit us at the following address</h4>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6 mb-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.865308490466!2d-0.024290844705197046!3d51.496103327804384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602c0671641a1%3A0x266a92454825f03e!2s10%2C%2016%20Tiller%20Rd%2C%20London%20E14%208PX%2C%20UK!5e0!3m2!1sen!2s!4v1701078741032!5m2!1sen!2s"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md-6 mb-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.865308490466!2d-0.024290844705197046!3d51.496103327804384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602c0671641a1%3A0x266a92454825f03e!2s10%2C%2016%20Tiller%20Rd%2C%20London%20E14%208PX%2C%20UK!5e0!3m2!1sen!2s!4v1701078741032!5m2!1sen!2s"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- END:: About Section -->
 
     <!-- START:: News Letter -->
     <section class="subscribe_area">
@@ -500,13 +424,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous" ></script>
     
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <script>
-        // Toggle plus and minus icons on button click
-        $(document).on('click', '.plus-minus-btn', function() {
-          $(this).find('.fa-plus, .fa-minus').toggleClass('fa-plus fa-minus');          
-        });
-    </script>
     <!-- END:: JS -->
   </body>
 </html>
