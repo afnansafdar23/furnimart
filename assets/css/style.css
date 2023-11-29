@@ -281,7 +281,6 @@ i {
     font-weight: 500;
     text-transform: uppercase;
   }
-
 }
 
 .faq-item h5 button, .card-header h2 button{
@@ -3209,12 +3208,19 @@ ul {
   }
 }
 
+@media (max-width: 768px){
+  .single_product_item{
+    width: 75%;
+    text-align: center;
+    margin-left: 10%;
+  }
+}
 
 @media (max-width: 425px){
   .single_product_item{
-    width: 90%;
+    width: 78%;
     text-align: center;
-    margin-left: 3%;
+    margin-left: 10%;
   }
 
   .single_product_item img{
@@ -3224,11 +3230,17 @@ ul {
 
 @media (max-width: 321px){
   .single_product_item{
-    width: 90%;
+    width: 88%;
+    text-align: center;
+    margin-left: 7%;
   }
 
   .single_product_item img{
     height: 200px;
+  }
+
+  .section_tittle h2{
+    font-size: 25px !important;
   }
 }
 
