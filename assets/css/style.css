@@ -303,6 +303,22 @@ i {
   color: var(--bgColor) !important;
 }
 
+/* Checkout page */
+.returning-customer{
+  border-top: 5px solid var(--textColor);
+  background-color: #f7f6f7;
+}
+.returning-customer a{
+  text-decoration: none; 
+  color: var(--textColor); 
+  font-weight: 700;
+}
+.returning-customer a:hover{
+  text-decoration: none; 
+  color: var(--bgColor); 
+  font-weight: 700;
+}
+
 /* END: My Styles */
 /* .btn_2,
 .form-contact .form-group .btn_1 i {
@@ -6056,7 +6072,7 @@ sup,
 sub,
 u,
 del {
-  color: #ff3368;
+  color: var(--textColor);
 }
 
 
