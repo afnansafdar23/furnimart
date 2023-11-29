@@ -284,6 +284,25 @@ i {
 
 }
 
+.faq-item h5 button, .card-header h2 button{
+  color: var(--textColor);
+}
+
+.card-header h2 button{
+  font-weight: 700;
+}
+
+.collapse p{
+  padding: 0 14px;
+}
+
+.btn-link {
+  color: var(--textColor) !important;
+}
+
+.btn-link:hover{
+  color: var(--bgColor) !important;
+}
 
 /* END: My Styles */
 /* .btn_2,
@@ -3205,7 +3224,7 @@ ul {
 
 @media (max-width: 321px){
   .single_product_item{
-    width: 95%;
+    width: 90%;
   }
 
   .single_product_item img{
@@ -3908,8 +3927,8 @@ ul {
 
 .p_filter_widgets .list li.active a:before,
 .p_filter_widgets .list li:hover a:before {
-  background: #ff3368;
-  border-color: #ff3368;
+  background: var(--textColor);
+  border-color: var(--textColor);
 }
 
 
@@ -4141,10 +4160,10 @@ ul {
 .irs-bar {
   height: 6px;
   top: 33px;
-  border-top: 1px solid #ff3368;
-  border-bottom: 1px solid #ff3368;
-  background: #ff3368;
-  background: linear-gradient(to top, #ff3368 0%, #ff3368 100%);
+  border-top: 1px solid --textColor;
+  border-bottom: 1px solid --textColor;
+  background: var(--textColor);
+  /* background: linear-gradient(to top, #ff3368 0%, #ff3368 100%); */
 }
 
 
@@ -4162,9 +4181,9 @@ ul {
 .irs-slider {
   height: 15px;
   width: 15px;
-  border: 1px solid #ff3368;
-  background-color: #ff3368;
-  background: linear-gradient(to bottom, #ff3368 0%, #ff3368 20%, #ff3368 100%);
+  border: 1px solid var(--textColor);
+  background-color: var(--textColor);
+  /* background: linear-gradient(to bottom, #ff3368 0%, #ff3368 20%, #ff3368 100%); */
   top: 28px;
   box-shadow: none;
 }
