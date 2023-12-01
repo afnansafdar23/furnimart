@@ -265,12 +265,12 @@
               <!-- Create Account -->
               <div class="create-account">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onchange="toggleCreateAccountForm()">
                   <label class="form-check-label" for="flexCheckDefault">
                     Default checkbox
                   </label>
                 </div>
-                <section class="create-account-form">
+                <section class="create-account-form" id="createAccountForm" style="display: none;">
                   <div class="mb-3 mt-3">
                     <label for="exampleFormControlInput1" class="form-label">Create Account and Passsword <span style="color: red;">*</span></label>
                     <input style="color: black;" type="email" class="form-control" id="exampleFormControlInput1" required>
@@ -483,5 +483,11 @@
     
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- END:: JS -->
+    <script>
+      function toggleCreateAccountForm() {
+        var createAccountForm = document.getElementById("createAccountForm");
+        createAccountForm.style.display = (createAccountForm.style.display === "none") ? "block" : "none";
+      }
+    </script>
   </body>
 </html>
