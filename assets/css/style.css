@@ -8245,26 +8245,66 @@ h6 {
 
 /* START: Contact Page */
 .contact-form-section {
-  max-width: 600px;
+  max-width: 800px;
   margin: 50px auto;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+
+}
+
+.contact-form-section h2 {
+  margin-left: 4em;
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 767px) {
+  .contact-form-section h2 {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #29384B; 
+  font-size: 24px; 
+  text-decoration: none;
+  transition: color 0.3s; 
+}
+
+.social-icons a:hover {
+  color: #007BFF; 
 }
 
 .contact-form-section form {
-  display: grid;
-  grid-gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
 }
 
-.contact-form-section label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
+.container.contact-form-section form .input-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
 }
 
-.contact-form-section input, .contact-form-section select, .contact-form-section textarea {
+
+.container.contact-form-section form input .container.contact-form-section form textarea {
+  flex: 2;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.contact-form-section input,
+.contact-form-section select,
+.contact-form-section textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -8273,13 +8313,93 @@ h6 {
 }
 
 .contact-form-section button {
-  background-color: #4caf50;
-  color: #fff;
+  color: black;
   padding: 10px 20px;
-  border: none;
+  border: 2px solid black;
+  box-shadow: 0 0 5px #000;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.contact-form-section button:hover {
+  background-color: #29384B;
+  color: #fff;
+}
+
+.top-banner {
+  margin-top: 82px;
+}
+
+.top-banner img {
+  width: 100%;
+  height: 200px;
+}
+
+.top-banner-img {
+  position: relative;
+  text-align: center;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-banner-img h2,
+.top-banner-img p {
+  color: white;
+}
+
+.top-banner-img p a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 778px) {
+  .top-banner {
+    margin-top: 72px;
+  }
+
+  .top-banner img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  .top-banner-img h2 {
+    font-size: 18px;
+  }
+
+  .top-banner-img p {
+    font-size: 13px;
+  }
+
+  .top-banner {
+    margin-top: 60px;
+  }
+
+  .top-banner img {
+    height: 120px;
+  }
+
+  .p_filter_widgets {
+    display: none;
+  }
+
+  .price_filter {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .left_sidebar_area {
+    padding: 1rem 2rem;
+  }
 }
 
 .top-banner{
@@ -8350,7 +8470,6 @@ h6 {
     padding: 1rem 2rem;
   }
 }
-
 /* END: Contact Page */
 
 /* START: About Page */
