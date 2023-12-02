@@ -3511,6 +3511,7 @@ ul {
   .subscribe_area {
     height: 350px;
   }
+  
 }
 
 .subscribe_area h5 {
@@ -8462,6 +8463,17 @@ h6 {
   .price_filter{
     display: none;
   }
+
+  .box-left h5, .box-right h5{
+    font-size: 13px;
+  }
+  .box-left span, .box-right span{
+    font-size: 11px;
+  }
+
+  .box-right h4, .box-right h3{
+    font-weight: 16px;
+  }
 }
 
 @media (max-width: 768px){
@@ -8506,3 +8518,28 @@ h6 {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 /* END: About Page */
+
+/* START: Product Page new css */
+.product_top_bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px){
+  .product_top_bar {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 425px){
+  .product_top_bar {
+    margin-top: -35px;
+    height: 100px;
+  }
+}
+/* END: Product Page new css */
+.cart-product-img {
+  max-width: 100px;
+  max-height: 100px;
+}

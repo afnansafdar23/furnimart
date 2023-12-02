@@ -22,6 +22,7 @@
     <!-- swiper CSS -->
     <link rel="stylesheet" href="assets/css/slick.css" />
     <!-- style CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- END:: Styles -->
   </head>
@@ -177,68 +178,105 @@
       <div class="top-banner-img">
         <img src="./assets/images/breadcrumb1.png" alt="Banner" class="img-fluid">
         <div class="text-container">
-          <h2>Contact</h2>
-          <p><a href="index.html"> Home </a>> Contact</p>
+          <h2>Cart</h2>
+          <p><a href="index.html"> Home </a>> Cart</p>
         </div>
       </div>       
     </section>
     <!-- END:: TOP Banner -->
 
-    <!-- START: Contact Section -->
-  <section class="contact-section">
-    <div class="container mt-4">
-      <div class="row" class="inner-contact-section">
-        <div class="col-lg-4 col-sm-12 mb-4 py-5 border">
-          <p>Wood Worth Cabinatry</p>
-          <h2>Get in Touch</h2>
-          <hr style="color:#29384B; width: 50px; font-weight: bold;">
-          <p>Studio 101, 13 Bowden St
-            Alexandria NSW, 2015</p>
-
-          <p class="mt-4">
-            Parking only available on weekends.
-            Feel free to buzz 101 at the intercom!
-            Email: alexandria@brosa.com
-            Ph: (02) 7202 5701
-            Customer Service: 1300 027 672 (for all queries)
-          </p>
-          <h6>FOLLOW US</h6>
-          <hr style="color: #000"; width="60px" ; >
-          <!-- Social Media Icons -->
-          <div class="social-icons mt-4">
-            <a href="#" class="fab fa-facebook"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-youtube"></a>
-          </div>
-          
-        </div>
-        <div class="col-lg-8 col-sm-12">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.865308490466!2d-0.024290844705197046!3d51.496103327804384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602c0671641a1%3A0x266a92454825f03e!2s10%2C%2016%20Tiller%20Rd%2C%20London%20E14%208PX%2C%20UK!5e0!3m2!1sen!2s!4v1701078741032!5m2!1sen!2s"
-            width="100%" height="95%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container contact-form-section">
-      <h2>Have a question? Contact us!</h2>
-      <form>
-        <div class="input-row">
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-          <input type="email" id="email" name="email" placeholder="Your email" required>
-        </div>
-
-        <textarea id="message" name="message" placeholder="Your question here..." rows="10" required></textarea>
-        <button type="submit">SEND</button>
-      </form>
-    </div>
-
-  </section>
-  <!-- START: Contact Section -->
+    <!-- START: Cart Section -->
+    <section class="cart-section">
+        <div class="container mt-5">
+            <h2>Shopping Cart</h2>
     
+            <div class="row border-bottom font-weight-bold mb-2">
+                <div class="col">Product</div>
+                <div class="col">Price</div>
+                <div class="col">Quantity</div>
+                <div class="col">Subtotal</div>
+            </div>
+    
+            <div class="row mb-2">
+                <div class="col">
+                    <img src="assets/images/product/product_1.png" alt="Product Image" class="cart-product-img">
+                    Product 1
+                </div>
+                <div class="col">$10.00</div>
+                <div class="col">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-link btn-outline-secondary" type="button">+</button>
+                        </div>
+                        <input type="number" class="form-control quantity-input" value="1" min="1">
+                        <div class="input-group-append">
+                            <button class="btn btn-link btn-outline-secondary" type="button">-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">$10.00</div>
+            </div>
+    
+            <div class="row mb-2">
+                <div class="col">
+                    <img src="assets/images/product/product_2.png" alt="Product Image" class="cart-product-img">
+                    Product 2
+                </div>
+                <div class="col">$20.00</div>
+                <div class="col">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-link btn-outline-secondary" type="button">+</button>
+                        </div>
+                        <input type="number" class="form-control quantity-input" value="1" min="1">
+                        <div class="input-group-append">
+                            <button class="btn btn-link btn-outline-secondary" type="button">-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">$40.00</div>
+            </div>
+            <!-- Add more rows for additional products -->
+    
+            <!-- Cart Total Section -->
+            <div class="column border-bottom font-weight-bold mb-2">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col">
+                    <h3>Cart Total</h3>
+                </div>
+                <div class="col"></div>
+            </div>
+    
+            <div class="column">
+                <div class="col">
+                    <strong>Subtotal:</strong> $50.00
+                </div>
+                <div class="col">
+                    <strong>Shipping Details:</strong>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="shipping" id="shippingFree" value="free" checked>
+                        <label class="form-check-label" for="shippingFree">Free Shipping</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="shipping" id="shippingExpress" value="express">
+                        <label class="form-check-label" for="shippingExpress">Flat rate</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <strong>Total:</strong> $50.00
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <button class="btn btn-primary" style="background-color: #29384B;">Proceed to Checkout</button>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <!-- END: Cart Section -->
+   
     <!-- START:: News Letter -->
     <section class="subscribe_area">
       <div class="container">
@@ -357,6 +395,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous" ></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- END:: JS -->
+    <script>
+        // Add this script to handle quantity increment and decrement
+        $(document).ready(function () {
+            // Increment quantity
+            $('.quantity-input').on('click', '.btn-outline-secondary:first-child', function () {
+                $(this).closest('.input-group').find('input[type="number"]').val(function (i, oldValue) {
+                    return ++oldValue;
+                });
+            });
+
+            // Decrement quantity
+            $('.quantity-input').on('click', '.btn-outline-secondary:last-child', function () {
+                $(this).closest('.input-group').find('input[type="number"]').val(function (i, oldValue) {
+                    return (oldValue > 1) ? --oldValue : oldValue;
+                });
+            });
+        });
+    </script>
+
   </body>
 </html>
