@@ -820,7 +820,7 @@ ul {
 
 
 .btn_1:hover {
-  background-color: #ff3368;
+  background-color: var(--bgColor);
   color: #fff;
 }
 
@@ -836,7 +836,6 @@ ul {
   color: #fff;
   text-transform: uppercase;
   font-weight: 400;
-  box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
   border: 1px solid --bgColor;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -846,6 +845,7 @@ ul {
 .btn_3:hover {
   background-color: transparent;
   color: black;
+  border: 1px solid var(--bgColor);
 }
 
 
@@ -4300,7 +4300,7 @@ ul {
 .s_product_text h2 {
   font-size: 24px;
   font-weight: bold;
-  color: #ff3368;
+  color: var(--textColor);
   margin-bottom: 15px;
 }
 
@@ -4330,7 +4330,7 @@ ul {
 
 
 .s_product_text .list li a.active {
-  color: #ff3368;
+  color: var(--textColor);
 }
 
 
@@ -4411,7 +4411,6 @@ ul {
   bottom: 7px;
   width: 100%;
   height: 1px;
-  background-color: #dddddd;
 }
 
 
@@ -4663,8 +4662,8 @@ ul {
 
 
 .review_item .media .media-body .reply_btn:hover {
-  background: #ff3368;
-  border-color: #ff3368;
+  background: var(--bgColor);
+  border-color: var(--bgColor);
   color: #fff;
 }
 
@@ -4682,7 +4681,7 @@ ul {
 
 .review_box h4 {
   font-size: 24px;
-  color: #2a2a2a;
+  color: var(--textColor);
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -5794,7 +5793,8 @@ ul {
 
 .login_part .login_part_text .btn_3:hover {
   background-color: #fff;
-  color: #ff3368;
+  color: var(--textColor);
+  border: 1px solid var(--bgColor);
 }
 
 @media (max-width: 991px) {
@@ -5924,7 +5924,6 @@ ul {
 .s_product_text .like_us {
   border-radius: 50%;
   background-color: white;
-  box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.3);
   width: 50px;
   height: 50px;
   line-height: 56px;
@@ -5935,8 +5934,7 @@ ul {
 
 .s_product_text .btn_3 {
   padding: 13px 36px;
-  box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
-  border: 1px solid #ff3368;
+  border: 1px solid var(--bgColor);
 }
 
 @media (max-width: 576px) {
@@ -8552,4 +8550,11 @@ h6 {
 .btn-outline-secondary:hover{
   color: white !important;
   text-decoration: none;
+}
+
+.input-number:hover{
+  color: black;
+}
+.rating_list h3, .box_total h5{
+  color: var(--textColor) !important;
 }
