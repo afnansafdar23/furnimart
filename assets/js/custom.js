@@ -224,12 +224,12 @@
     });
 
     $("#close_search").on("click", function () {
-      $("#search_input_box").slideUp(500);
+      $("#search_input_box").slideUp(300);
     });
 
     // Hide the search box on scroll
     $(window).scroll(function () {
-      $("#search_input_box").slideUp(500);
+      $("#search_input_box").slideUp(300);
     });
   });
 
