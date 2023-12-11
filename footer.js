@@ -27,23 +27,19 @@ footerTemplate.innerHTML = `
             <div class="row justify-content-around">
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="single_footer_part">
-                        <h4>Top Products</h4>
+                        <h4>Shop</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Managed Website</a></li>
-                            <li><a href="">Manage Reputation</a></li>
-                            <li><a href="">Power Tools</a></li>
-                            <li><a href="">Marketing Service</a></li>
+                            <li><a href="category.html">Shop Category</a></li>
+                            <li><a href="single-product.html">Product Details</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="single_footer_part">
-                        <h4>Quick Links</h4>
+                        <h4>Pages</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Jobs</a></li>
-                            <li><a href="">Brand Assets</a></li>
-                            <li><a href="">Investor Relations</a></li>
-                            <li><a href="">Terms of Service</a></li>
+                            <li><a href="checkout.html">Product Checkout</a></li>
+                            <li><a href="cart.html">Shoping Cart</a></li>
                         </ul>
                     </div>
                 </div>
