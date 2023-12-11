@@ -8125,7 +8125,8 @@ h6 {
 }
 
 .contact-form-section button {
-  color: black;
+  color: white;
+  background-color: #29384B;
   padding: 10px 20px;
   border: 1px solid black;
   box-shadow: 0 0 5px #000;
@@ -8137,8 +8138,8 @@ h6 {
 }
 
 .contact-form-section button:hover {
-  background-color: #29384B;
-  color: #fff;
+  background-color: white;
+  color: black;
 }
 
 .top-banner {
@@ -8389,6 +8390,7 @@ h6 {
 
 .sort-by{
   display: flex;
+  gap: 0.5rem;
 }
 
 .product-search-button{
@@ -8512,4 +8514,50 @@ input[id^="exampleFormControlInput1"] {
   .table-xs .total-row td:first-child {
     width: 99%;
   }
+}
+
+@media (max-width: 320px){
+  .newsletter-btn {
+    margin-top: 50px;
+  }
+  .newsletter-btn a{
+    padding: 10px 5px !important;
+  }
+
+  .box-right h4, .box-right label{
+    font-size: 14px !important;
+  }
+
+  .box-right h3{
+    font-size: 15px !important;
+  }
+
+  .p_name, .subtotal{
+    margin-bottom: 10px;
+  }
+  .box-left hr, .box-right hr {
+    display: none !important;
+}
+
+.br-price{
+  margin-bottom: 45px;
+}
+
+.box-right label{
+  font-size: 10px !important;
+}
+
+.total_price{
+ margin-top: 18px; 
+}
+
+.product_details, .product_details p small {
+  font-size: 11px;
+  line-height: -2px;
+}
+
+#palypal{
+  margin-bottom: 20px;
+}
+
 }

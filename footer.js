@@ -30,6 +30,7 @@ footerTemplate.innerHTML = `
                         <h4>Shop</h4>
                         <ul class="list-unstyled">
                             <li><a href="category.html">Shop Category</a></li>
+                            <li><a href="allproducts.html">All Products</a></li>
                             <li><a href="single-product.html">Product Details</a></li>
                         </ul>
                     </div>

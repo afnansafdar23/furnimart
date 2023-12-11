@@ -56,6 +56,9 @@
                       <a class="dropdown-item" href="category.html">
                         shop category
                       </a>
+                      <a class="dropdown-item" href="allproducts.html">
+                        All Products
+                      </a>
                       <a class="dropdown-item" href="single-product.html">
                         product details
                       </a>
@@ -284,16 +287,13 @@
           <!-- Billing Details -->
           
           <!-- Your Order -->
-          <div class="col-md-12 col-lg-6">
+          <div class="col-md-12 col-lg-6" id="checkout-data">
             
-            <!-- Sticky -->
-            <div class="sticky">
-              
             <h2>Your Order</h2>
             <!-- Checkout data -->
             <div class="checkout-data p-2" style="background-color: #f5f5f5;">
               <!-- card -->
-              <div class="container mt-5">
+              <div class="container-lg mt-5">
                 <div class="card">
                     <div class="your-order-box p-4" style="display: flex;">
                         <!-- left -->
@@ -301,9 +301,9 @@
                           <h5 class="card-title">Product</h5>
                                 <p class="card-text" style="color: #afafaf;">
                                   <hr>
-                                  <div><span>Bed Neck Pillows x 1</span></div>
+                                  <div class="p_name"><span>Bed Neck Pillows x 1</span></div>
                                   <hr>
-                                  <div><span>Subtotle</span></div>
+                                  <div class="subtotal"><span>Subtotle</span></div>
                                   <hr>
                                   <div style="margin-bottom: 53px;"><span>Shipping</span></div>  
                                   <hr>
@@ -315,7 +315,7 @@
                           <h5 class="card-title">Subtotal</h5>
                                 <p class="card-text">
                                   <hr>
-                                  <div><h4><b>£200</b></h4></div>
+                                  <div><h4 class="br-price"><b>£200</b></h4></div>
                                   <hr>
                                   <div><h4><b>£200</b></h4></div>
                                   <hr>
@@ -323,7 +323,7 @@
                                   <div>
                                     <div>
                                       <input type="radio" name="free-ship" id="free-ship">
-                                      <label>Free Shipping</label>
+                                      <label>Free Ship</label>
                                     </div>
                                     
                                     <div>
@@ -333,7 +333,7 @@
                                   </div>
                                   <!-- Radio Btn -->
                                   <hr>
-                                  <div><h3><b>£200</b></h3></div>
+                                  <div><h3 class="total_price"><b>£200</b></h3></div>
                                 </p>
                             </div>
                         </div>
@@ -343,7 +343,7 @@
             </div>
               <!-- card -->
               <!-- Details -->
-              <div class="details p-4" style="background-color: #f5f5f5;">
+              <div class="product_details p-4" style="background-color: #f5f5f5;">
                 <input type="radio" name="bank-transfer" id="bank-transfer">
                 <label>Direct Bank Transfer</label>
                 <p><small>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</small></p>
@@ -354,20 +354,23 @@
                   <input type="radio" name="paypal" id="palypal">
                   <label>Paypal</label>
 
-                  <div class="input-group newsletter-btn">
+                  <div class="input-group newsletter-btn mt-5">
                     <div class="input-group-append">
-                        <a href="shop.html" class="center_btn_2" id="basic-addon2">Place Order</a>
+                        <a href="#" class="center_btn_2" id="basic-addon2">Place Order</a>
                     </div>
-                </div>
+                 </div>
 
               </div>
               <!-- Details -->
 
-            </div>
-            <!-- Sticky -->
-              
+             <!-- <div class="input-group mt-4">
+              <div class="input-group-append">
+                  <a href="#" class="btn_3" id="basic-addon2">Place Order</a>
+              </div>
+            </div> -->  
             </div>
             <!-- Checkout data -->
+           
           </div>
         </div>
       </div>
